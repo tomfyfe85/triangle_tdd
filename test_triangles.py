@@ -1,5 +1,6 @@
 from triangles import triangle_type_machine
 import math
+import pytest
 
 def test_error_with_less_than_three_coords():
     """Exception raised if there are less than 3 coordinates"""
