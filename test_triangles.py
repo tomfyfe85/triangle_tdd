@@ -1,5 +1,5 @@
 from triangles import triangle_type_machine
-import pytest
+import math
 
 def test_error_with_less_than_three_coords():
     """Exception raised if there are less than 3 coordinates"""
@@ -20,3 +20,10 @@ def test_is_a_scalene_triangle():
 
 def test_is_an_isosceles_triangle():
     assert triangle_type_machine([(1,2), (5,2), (3,6)]) == "Isosceles"
+
+
+# TODO
+# find coords for a triangle with 3 internal angles of 60 degrees
+# last coord of c must be square root
+# def test_is_an_equilateral_triangle():
+#     assert triangle_type_machine([(0, 0), (2, 0), (1, math.sqrt(3))]) == "Equilateral"
