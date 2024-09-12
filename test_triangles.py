@@ -17,3 +17,6 @@ def test_error_with_more_than_three_coords():
 
 def test_is_an_scalene_triangle():
     assert triangle_type_machine([(0,0), (3,4), (6,6)]) == "Scalene"
+
+def test_is_an_isosceles_triangle():
+    assert triangle_type_machine([(1,2), (5,2), (3,6)]) == "Isosceles"

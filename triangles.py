@@ -17,6 +17,9 @@ def triangle_type_machine(coords):
     if side1 != side2 and side2 != side3 and  side3 != side1:
         return "Scalene"
 
+    if side1 == side2 or side2 == side3 or side3 == side1:
+        return "Isosceles"
+
 
 # find length of sides from coordinates
 # use to determine isosceles, equilateral
